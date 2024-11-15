@@ -1,0 +1,152 @@
+
+body {
+  background-color: #000;
+  margin: 0;
+  overflow: auto;
+  font-family: monospace;
+  text-align: center;
+}
+
+.intro-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo_img {
+  width: 40vh;
+  border-radius: 40px;
+  z-index: 10;
+}
+
+.whothefuckisthis-container {
+  color: cyan;
+  text-align: center;
+  margin: 40px;
+  position: relative;
+}
+
+/* floats */
+
+.doin-container {
+  color: cyan;
+  text-align: center;
+ }
+ 
+ .line {
+  color: lightcyan;
+  width: 5px;
+  height: 10px;
+ }
+
+.float-item-p {
+  font-size: 15px;
+  line-height: 2;
+  text-align: left;
+}
+
+.float-item-s {
+  font-size: 15px;
+  line-height: 2;
+  text-align: right;
+}
+
+.parkour{
+  height: 15vh;
+  display: inline-block;
+}
+
+.server{
+  height: 15vh;
+  display: inline-block;
+}
+
+/* text effect */
+
+.scramble {
+  font-size: 80px;
+  font-weight: bold;
+  color: cyan;
+  position: static;
+}
+
+.neon {
+  text-shadow:
+    0 0 5px #0ff
+ }
+ 
+ canvas {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+ }
+ 
+ .Link-container {
+  text-align: center;
+ }
+
+/* Typewriter 컨테이너 만들어서 가따뿌자 */
+.typewriter-container {
+  margin: 25px;
+  text-align: center;
+}
+
+/* Typewriter 바로 드가자 */
+.typewriter {
+    display: inline;
+    white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+    border-right: .15em solid cyan; /* 커서 효과 */
+    animation: blink-caret .75s step-end infinite; /* 커서 깜박임 애니메이션 */
+}
+
+/* 커서 깜박임 애니메이션 */
+@keyframes blink-caret {
+    from, to { border-color: transparent; } /* 투명 상태 */
+    50% { border-color: cyan; } /* 중간에 cyan 색상 바로 그냥 */
+}
+
+/* 링크 표현용임 ㄹㅇ */
+
+@keyframes neon {
+            0%, 100% {
+                text-shadow: 0 0 10px #0ff;
+                opacity: 1;
+            }
+            50% {
+                text-shadow: none;
+                opacity: 0;
+            }
+        }
+
+        .Link-text {
+            font-family: Arial, sans-serif;
+            font-size: 3em;
+            color: cyan;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .Link-text span {
+            animation: neon 0.5s infinite alternate;
+        }
+
+        .Link-text span:nth-child(odd) {
+            animation-duration: 0.3s;
+            animation-delay: calc(0.3s * var(--i));
+        }
+
+        .Link-text span:nth-child(even) {
+            animation-duration: 0.4s;
+            animation-delay: calc(0.4s * var(--i));
+        }
+        
+  .link-block {
+    display: inline-block;
+    margin: 40px 30px 40px 30px;
+    width: 10vh;
+    text-align: center;
+    fill: cyan;
+  }
