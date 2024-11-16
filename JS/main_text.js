@@ -68,7 +68,7 @@
     'ZER0 D0G ',
     'EAT ',
     'SLEEP ',
-    'HACKING '
+    'HACK '
   ];
 
   let counter = 0;
